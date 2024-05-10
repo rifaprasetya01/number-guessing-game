@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Number guessing game</title>
+  </head>
+  <body>
+    <section class="home-section">
+      <header>
+        <h1 class="sub-headline">Wellcome to</h1>
+        <h2 class="headline">Number guessing game</h2>
+      </header>
+
+      <a href="#mainSection">
+        <button id="startGame" class="btn start-trigger-btn">Start</button>
+      </a>
+    </section>
+
+    <section id="mainSection" class="main-section">
+      <main class="game-content">
+        <header>
+          <h1>Tebak angka kebenaran diantara<br />1 sampai 100</h1>
+        </header>
+        <main>
+          <span class="user-answer-output" id="userAnswerOutput">Start</span>
+          <input
+            type="number"
+            class="user-answer-field"
+            id="userAnswerField"
+            placeholder="Masukkan angka pilihan kamu" />
+          <div class="wrapper">
+            <button type="button" id="shuffleNumber" class="shuffle-btn btn">
+              Mulai Lagi
+            </button>
+            <button type="button" id="sendAnswer" class="send-answer-btn btn">
+              Kirim
+            </button>
+          </div>
+        </main>
+      </main>
+      <aside class="history-content">
+        <h1 class="title">
+          Histori Percobaan (<span id="totalTryError">0</span>x)
+        </h1>
+        <ul id="historyContent" class="history-list"></ul>
+      </aside>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
